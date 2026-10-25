@@ -59,7 +59,8 @@ while(fast != nullptr && fast->getnext() != nullptr) {
         fast = fast->getnext()->getnext();   // 2 steps
     }
     cout << "Middle node data: " << slow->getdata() << endl;
-    cout << "Node before middle node: " << current->getdata();
+
+    
 
     return 0;
 }

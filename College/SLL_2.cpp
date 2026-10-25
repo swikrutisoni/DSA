@@ -47,6 +47,22 @@ Therefore, **30 is the middle node**.
 **Slow → 1 step**
 **Fast → 2 steps**
 **Fast reaches END → Slow reaches MIDDLE**
+
+if the number of nodes is even, there will be two middle nodes. In that case, you can choose either the first or second middle 
+node based on your requirement.
+
+u can access the second middle node by this method but if you want to access the first middle node, then you can use this method:
+while (fast->next != nullptr &&
+       fast->next->next != nullptr) {
+    slow = slow->next;
+    fast = fast->next->next;
+}
+
+
+
+
+
+
 */
 
 
