@@ -81,3 +81,11 @@ int main(){
 
     return 0;
 }
+
+/*
+Exam notes to remember:
+- Level Order Traversal = BFS.
+- Data structure used = Queue.
+- Queue follows FIFO.
+- Visit the current node, then insert its left and right children.
+- Time complexity = \(O(n)\).*/
