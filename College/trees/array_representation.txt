@@ -1,0 +1,20 @@
+The three important formulas
+We are using 0-based indexing, meaning the first array element is at index 0.
+
+Suppose a node is at index i.
+What we want	Formula
+Left child	2*i + 1
+Right child	2*i + 2
+Parent	(i-1)/2 (integer division)
+
+6. Advantages and disadvantages
+Advantages
+- Easy to implement.
+- No need for pointers.
+- Parent and child can be found using formulas.
+- Efficient for complete binary trees.
+Disadvantages
+- Wastes memory if the tree is skewed (many empty positions).
+- Fixed-size arrays can limit tree growth.
+- Insertion and deletion can be inconvenient.
+Exam note: Array representation is particularly suitable for complete and nearly complete binary trees, such as heaps.
